@@ -59,7 +59,7 @@ VITA_GLES_LoadLibrary(_THIS, const char *path)
             default: gxm_ms = SCE_GXM_MULTISAMPLE_NONE; break;
         }
 
-        vglInitExtended(0, 960, 544, MEMORY_VITAGL_THRESHOLD, gxm_ms);
+        vglInitExtended(0x800000, 960, 544, MEMORY_VITAGL_THRESHOLD, gxm_ms);
         vgl_initialized = 1;
     }
 
