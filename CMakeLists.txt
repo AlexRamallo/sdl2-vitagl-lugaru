@@ -2321,6 +2321,8 @@ elseif(VITA)
     endif()
 
     if(VIDEO_VITA_VGL)
+	  include_directories(${CMAKE_SOURCE_DIR}/../vitagl/source)
+      set(CMAKE_REQUIRED_INCLUDES ${CMAKE_SOURCE_DIR}/../vitagl/source)
       check_include_file(vitaGL.h HAVE_VITAGL_H)
 
       if(HAVE_VITAGL_H)
